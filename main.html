@@ -10,10 +10,10 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-	 <form action="" method="get">
+	 <form action="" method="post">
         <div>
             <label for="name">Name</label>
-        <input type="text" id="name">
+        <input type="text" id="name" required>
         </div>
         <div>
             <label for="email">Email</label>
@@ -21,31 +21,29 @@
         </div>
         <div>
             <label for="gender">Gender</label>
-        <input type="radio" id="gender" name="gender">male
-        <input type="radio" id="gender" name="gender">Female
+        <input type="radio" id="gender" name="male">male
+        <input type="radio" id="gender" name="female">Female
         </div>
+        <label for="cars">Car Brands:</label>
+    <select id="cars" name="cars">
+    <option value="bmw">BMW</option>
+    <option value="mercedez">Mercedez</option>
+     <option value="audi">Audi</option>
+    </select>
         <div>
-            <label for="carbrands">Car Brands</label>
-        <input type="checkbox" id="cars" name="bmw" value="bmw">
-        <label for="cars">BMW</label>
-        <input type="checkbox" id="cars" name="audi" value="audi">
-        <label for="cars">Audi</label>
-        <input type="checkbox" id="cars" name="mercedez" value="mercedez">
-        <label for="cars">Mercedez</label>
-        </div>
-        <div>
-            <label for="carage"Car Age></label>
+            <label for="carage">Car Age</label>
+			<input type="number" id="carage" required>
         </div>
         <div>
             <label for="dop">Date of Purchase</label>
         <input type="text" id="dop" required>
         </div>
         <div>
-            <label for="Password">Password</label>
-        <input type="password" id="Password" required>
+            <label for=password">Password</label>
+        <input type="password" id="password" required>
         </div>
         <div>
-            <input type="submit">
+            <button type="submit">Submit</button>
         </div>
     </form>
 
